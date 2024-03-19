@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Calculator app</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/switchcolor.js"></script>
+    <script defer src="assets/js/app.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header>
+      <h1>calc</h1>
+      <div class="container">
+        <p>Theme</p>
+        <div class="toggle">
+          <div class="toggle__states">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <input class="toggle__input" type="checkbox" id="check" />
+          <label class="toggle__button" for="check"></label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Screen result -->
+      <div class="result"></div>
+      <div class="keys">
+        <button data-key="103" class="key">7</button>
+        <button data-key="104" class="key">8</button>
+        <button data-key="105" class="key">9</button>
+        <button data-key="8" class="key">DEL</button>
+        <button data-key="100" class="key">4</button>
+        <button data-key="101" class="key">5</button>
+        <button data-key="102" class="key">6</button>
+        <button data-key="187" class="key">+</button>
+        <button data-key="97" class="key">1</button>
+        <button data-key="98" class="key">2</button>
+        <button data-key="99" class="key">3</button>
+        <button data-key="109" class="key">-</button>
+        <button data-key="110" class="key">.</button>
+        <button data-key="96" class="key">0</button>
+        <button data-key="111" class="key">/</button>
+        <button data-key="106" class="key">*</button>
+        <button data-key="27" class="key">RESET</button>
+        <button data-key="13" class="key">=</button>
+      </div>
+    </main>
+  </body>
+</html>
