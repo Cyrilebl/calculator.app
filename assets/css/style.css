@@ -9,12 +9,15 @@
   /* Keys */
   --delBackground: hsl(225, 21%, 49%);
   --delShadow: hsl(224, 28%, 35%);
+  --delActive: hsl(217, 52%, 74%);
 
   --equalBackground: hsl(6, 63%, 50%);
   --equalShadow: hsl(6, 70%, 34%);
+  --equalActive: hsl(3, 100%, 68%);
 
   --keyBackground: hsl(30, 25%, 89%);
   --keyShadow: hsl(28, 16%, 65%);
+  --keyActive: hsl(0, 0%, 100%);
 
   /* Text */
   --header: hsl(0, 0%, 100%);
@@ -33,12 +36,15 @@
   /* Keys */
   --delBackground: hsl(185, 42%, 37%);
   --delShadow: hsl(185, 58%, 25%);
+  --delActive: hsl(183, 45%, 51%);
 
   --equalBackground: hsl(25, 98%, 40%);
   --equalShadow: hsl(25, 99%, 27%);
+  --equalActive: hsl(21, 100%, 63%);
 
   --keyBackground: hsl(45, 7%, 89%);
   --keyShadow: hsl(35, 11%, 61%);
+  --keyActive: hsl(0, 0%, 100%);
 
   /* Text */
   --header: hsl(60, 10%, 19%);
@@ -57,12 +63,15 @@
   /* Keys */
   --delBackground: hsl(281, 89%, 26%);
   --delShadow: hsl(285, 91%, 52%);
+  --delActive: hsl(280, 47%, 46%);
 
   --equalBackground: hsl(176, 100%, 44%);
   --equalShadow: hsl(177, 92%, 70%);
+  --equalActive: hsl(177, 100%, 74%);
 
   --keyBackground: hsl(268, 47%, 21%);
   --keyShadow: hsl(290, 70%, 36%);
+  --keyActive: hsl(264, 45%, 46%);
 
   /* Text */
   --header: hsl(52, 100%, 62%);
@@ -194,11 +203,19 @@ header h1 {
   border: none;
 }
 
+.keys button:active {
+  background-color: var(--keyActive);
+}
+
 .key {
   font-size: 1.8em;
   color: var(--keyboard);
   background-color: var(--keyBackground);
   box-shadow: 0 3px 0 var(--keyShadow);
+}
+
+button:nth-child(17) {
+  grid-column: 1/3;
 }
 
 button:nth-child(4),
@@ -209,8 +226,9 @@ button:nth-child(17) {
   box-shadow: 0 3px 0 var(--delShadow);
 }
 
-button:nth-child(17) {
-  grid-column: 1/3;
+button:nth-child(4):active,
+button:nth-child(17):active {
+  background-color: var(--delActive);
 }
 
 button:nth-child(18) {
@@ -219,6 +237,10 @@ button:nth-child(18) {
   color: var(--keyBackground);
   background-color: var(--equalBackground);
   box-shadow: 0 3px 0 var(--equalShadow);
+}
+
+button:nth-child(18):active {
+  background-color: var(--equalActive);
 }
 
 @media all and (max-width: 550px) {
