@@ -31,6 +31,9 @@ const calculate = (value) => {
         const indexKeyCode = listKeyCode.indexOf(value);
         const key = keys[indexKeyCode];
         screen.textContent += key.innerHTML;
+        if (screen.textContent.length > 10) {
+          screen.textContent = screen.textContent.slice(0, 16);
+        }
     }
   }
 };
