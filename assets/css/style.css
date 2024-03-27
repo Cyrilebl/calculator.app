@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
 :root {
   /* Theme 1 */
 
@@ -78,8 +80,6 @@
   --keyboard: hsl(52, 100%, 62%);
   --white: hsl(0, 0%, 100%);
 }
-
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
 
 * {
   margin: 0;
